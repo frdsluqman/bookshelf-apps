@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bookshelf Apps</title>
+</head>
+<body>
+
+    <header>
+        <div class="title">Bookshelf Apps</div>
+    </header>
+    
+    <div class="wrapper">
+        <div class="form-content">
+            <div class="title">Book Form List</div>
+            <form id="form" class="form">
+                <div class="form-group">
+                    <label for="title">Title Book</label>
+                    <input type="text" name="title" id="title" required>
+                </div>
+                <div class="form-group">
+                    <label for="author">Author Book</label>
+                    <input type="text" name="author" id="author" required>
+                </div>
+                <div class="form-group">
+                    <label for="year">Year Book</label>
+                    <input type="number" min="1900" max="2022" name="year" id="year" required>
+                </div>
+                <input class="btn-submit" type="submit" value="Submit" name="submit">
+            </form>
+        </div>
+    </div>
+
+    <div class="wrapper-content">
+        <div class="container">
+            <div class="title">Belum selesai dibaca</div>
+            <div class="list-item" id="list-item">
+                
+            </div>
+        </div>
+    
+        <div class="container">
+            <div class="title">Selesai dibaca</div>
+            <div class="list-item" id="list-complete">
+                
+            </div>
+        </div>
+    </div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
